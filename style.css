@@ -36,8 +36,8 @@ i {
 #clear{
     margin: 5px auto;
     border-radius: 20px;
-    color: cornflowerblue;
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background-color: cornflowerblue;
 }
 
 ul {
