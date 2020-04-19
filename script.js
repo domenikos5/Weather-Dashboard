@@ -62,7 +62,7 @@ $(document).ready(function () {
 
 
             const pTwo = $("<p class='humidity'>");
-            pTwo.html("Humidity:   " + response.main.humidity + "%");
+            pTwo.html("Humidity:   " + response.main.humidity +"%");
 
             const pThree = $("<p class='wind-speed'>");
             let wind = response.wind.speed;
