@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dashboard</title>
+     <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a00e5a706c.js" crossorigin="anonymous"></script>
+   
 </head>
+
 <body>
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-    <div class="row" >
-        <div class="col-3" style='background-color:gainsboro; padding: 10px;'>
-            <input type="text" id="input" placeholder="type city to search"><button class='btn btn-warning' id="submit">Submit</button>
-        </div>
-        <div class="col-9">
-            <div class="row" id='current'></div>
-            <div class="row" id='forecast'></div>
+    <div class="container">
+        <div class="row" id="weather-info">
+            <div class="col-sm-4">
+                <div class="card" style="width: 80%;">
+                    <div class="card-body" id="search">
+                        <h5>Search for City:</h5>
+                        <input type= text label="search" class="user-input" onfocus="this.value=''"/>
+                        <button id="searchBtn"><i class="fas fa-search"></i></button>
+                       <div class="city-input"> </div>
+                       <button id="clear">Clear Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body" id="city-info">
+
+                    </div>
+                </div>
+                <div id="five-day"></div>
+
         </div>
     </div>
+
+    <footer>
+       Weather Dashboard
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
