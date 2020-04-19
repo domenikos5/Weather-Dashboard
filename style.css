@@ -94,6 +94,10 @@ li {
     font-weight: bolder;
 }
 
+#city-info {
+    background-color: #8ebce2 ;
+}
+
 .col-sm-2 {
     background-color:#8ebce2;
     font-size: 12.5px;
