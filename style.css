@@ -55,6 +55,8 @@ li {
     
 }
 
+/* UV Index Color Reference: https://www.bloquv.com/uv-index/ */
+
 .ok {
     display: inline-block;
     background-color: green;
@@ -84,7 +86,7 @@ li {
 
 .extreme {
     display: inline-block;
-    background-color:rgb(138, 21, 0);
+    background-color:purple;
     color: white;
     padding: 5px 10px;
 }

@@ -134,14 +134,15 @@ $(document).ready(function () {
                     var pFour = $("<p class='uvi'>");
                     var uv = data.value
                     
+                    //UV Index Value Reference: https://www.bloquv.com/uv-index/
                     
-                    if (uv <= 2) {
+                    if (uv <= 2.9) {
                         pFour = $("<p class='ok'>");
-                    } else if (uv > 3 && uv <= 5) {
+                    } else if (uv > 3 && uv <= 5.9) {
                         pFour = $("<p class='moderate'>");
-                    } else if (uv > 6 && uv <= 7) {
+                    } else if (uv > 6 && uv <= 7.9) {
                         pFour = $("<p class='warning'>");
-                    } else if (uv > 8 && uv <= 10) {
+                    } else if (uv > 8 && uv <= 10.9) {
                         pFour = $("<p class='danger'>");
                     } else {
                         pFour = $("<p class='extreme'>");
