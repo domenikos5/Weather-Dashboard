@@ -136,13 +136,13 @@ $(document).ready(function () {
                     
                     //UV Index Value Reference: https://www.bloquv.com/uv-index/
                     
-                    if (uv <= 2.9) {
+                    if (uv <= 2.99) {
                         pFour = $("<p class='ok'>");
-                    } else if (uv > 3 && uv <= 5.9) {
+                    } else if (uv > 3 && uv <= 5.99) {
                         pFour = $("<p class='moderate'>");
-                    } else if (uv > 6 && uv <= 7.9) {
+                    } else if (uv > 6 && uv <= 7.99) {
                         pFour = $("<p class='warning'>");
-                    } else if (uv > 8 && uv <= 10.9) {
+                    } else if (uv > 8 && uv <= 10.99) {
                         pFour = $("<p class='danger'>");
                     } else {
                         pFour = $("<p class='extreme'>");
