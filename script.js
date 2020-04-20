@@ -101,7 +101,7 @@ $(document).ready(function () {
                    
                     if (data.list[index].dt_txt.indexOf("00:00:00") > -1) {
 
-                        colOne = $("<div class='col-sm-2'>"); //keeps the columns in a row
+                        colOne = $("<div class='col-sm-2'>"); 
                         colOne.append(moment(data.list[index].dt, "X").format("MM/DD/YYYY"));
                         var img = "<img src='https://openweathermap.org/img/w/" + data.list[index].weather[0].icon + ".png' >"
 
